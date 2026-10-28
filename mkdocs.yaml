@@ -1,0 +1,60 @@
+site_name: UQSmart
+site_url: https://UQSmart.github.io/
+site_author: UQSmart
+repo_url: https://github.com/UQSmart/UQSmart.github.io
+repo_name: UQSmart/UQSmart.github.io
+
+theme:
+    name: readthedocs
+
+    palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+plugins:
+  - search
+  - mermaid2:
+      version: 11.4.1
+
+markdown_extensions:
+  - pymdownx.details
+  - abbr
+  - admonition
+  - footnotes
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - attr_list
+  - pymdownx.snippets:
+      base_path: './'
+  - pymdownx.highlight:
+      line_spans: __span
+
+extra_css:
+  - styles/css/app.css
+  
+extra_javascript:
+  - javascripts/config.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+
+copyright: <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/license-Apache%20License%202.0-blue"" alt="Apache License, Version 2.0" /></a>
