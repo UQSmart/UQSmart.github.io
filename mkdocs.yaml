@@ -56,5 +56,10 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - Projects:
+    - 2conti: ./2conti
+    - Changelog Studio: ./changelog-studio
+    - YouBudget: ./YouBudget
+    - PhysiKo: ./PhysiKo
 
 copyright: <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/license-Apache%20License%202.0-blue"" alt="Apache License, Version 2.0" /></a>
